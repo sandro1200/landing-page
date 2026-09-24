@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NexusFlow — Connect, Automate & Scale</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Background Glow & Grid Elements -->
+  <div class="glow-bg top-glow"></div>
+  <div class="glow-bg bottom-glow"></div>
+  <div class="cyber-grid"></div>
+
+  <!-- Header / Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-icon"><i class="fa-solid fa-cube"></i></span>
+        <span class="logo-text">Nexus<span>Flow</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#connections" class="nav-link">Connections</a>
+        <a href="#showcase" class="nav-link">Platform</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" title="Toggle Theme" aria-label="Toggle theme">
+          <i class="fa-regular fa-moon"></i>
+        </button>
+        <a href="#contact" class="btn btn-secondary nav-btn-signin">Sign In</a>
+        <a href="#contact" class="btn btn-primary nav-btn-cta">Start Free <i class="fa-solid fa-arrow-right"></i></a>
+        <button class="hamburger-btn" id="mobileMenuBtn" aria-label="Open Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <span class="logo-text">Nexus<span>Flow</span></span>
+      <button class="drawer-close-btn" id="drawerCloseBtn">&times;</button>
+    </div>
+    <div class="drawer-links">
+      <a href="#hero" class="drawer-link">Home</a>
+      <a href="#features" class="drawer-link">Features</a>
+      <a href="#connections" class="drawer-link">Connections</a>
+      <a href="#showcase" class="drawer-link">Platform</a>
+      <a href="#contact" class="drawer-link">Contact</a>
+    </div>
+    <div class="drawer-actions">
+      <a href="#contact" class="btn btn-primary w-full">Get Started Free</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span class="badge-text">Next-Gen Release 2.5 is Live</span>
+          <i class="fa-solid fa-sparkles"></i>
+        </div>
+
+        <h1 class="hero-title">
+          Orchestrate workflows with <span class="gradient-text">limitless intelligence</span> & instant sync.
+        </h1>
+
+        <p class="hero-subtitle">
+          Supercharge your software stack with intelligent pipelines, real-time node connections, and unified analytics designed for fast-moving engineering and product teams.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#contact" class="btn btn-primary btn-lg">
+            <span>Get Started for Free</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#connections" class="btn btn-glass btn-lg">
+            <i class="fa-solid fa-circle-play"></i>
+            <span>Explore Live Nodes</span>
+          </a>
+        </div>
+
+        <div class="hero-trust">
+          <p class="trust-title">Trusted by engineering leaders worldwide</p>
+          <div class="trust-logos">
+            <span class="trust-item"><i class="fa-brands fa-github"></i> GitHub</span>
+            <span class="trust-item"><i class="fa-brands fa-aws"></i> AWS Cloud</span>
+            <span class="trust-item"><i class="fa-brands fa-stripe"></i> Stripe</span>
+            <span class="trust-item"><i class="fa-brands fa-figma"></i> Figma</span>
+            <span class="trust-item"><i class="fa-brands fa-slack"></i> Slack</span>
+          </div>
+        </div>
+
+        <!-- Interactive Hero Card Mockup -->
+        <div class="hero-dashboard-preview">
+          <div class="mockup-header">
+            <div class="window-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="mockup-search-bar">
+              <i class="fa-solid fa-lock"></i>
+              <span>nexusflow.cloud/workspace/realtime-orchestrator</span>
+            </div>
+            <div class="mockup-stats-pill">
+              <span class="status-indicator"></span> 99.99% Uptime
+            </div>
+          </div>
+          <div class="mockup-body">
+            <div class="preview-metric-card">
+              <div class="metric-top">
+                <span class="metric-title">Event Throughput</span>
+                <span class="metric-badge green">+34.8%</span>
+              </div>
+              <div class="metric-number">4.82M/s</div>
+              <div class="metric-bar"><div class="metric-bar-fill" style="width: 82%;"></div></div>
+            </div>
+
+            <div class="preview-metric-card">
+              <div class="metric-top">
+                <span class="metric-title">Active Connections</span>
+                <span class="metric-badge blue">Synchronized</span>
+              </div>
+              <div class="metric-number">1,248</div>
+              <div class="metric-bar"><div class="metric-bar-fill blue-fill" style="width: 94%;"></div></div>
+            </div>
+
+            <div class="preview-metric-card">
+              <div class="metric-top">
+                <span class="metric-title">Latency</span>
+                <span class="metric-badge purple">&lt; 1.2ms</span>
+              </div>
+              <div class="metric-number">0.84ms</div>
+              <div class="metric-bar"><div class="metric-bar-fill purple-fill" style="width: 98%;"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section class="features-section" id="features">
+      <div class="container">
+        <div class="section-header">
+          <div class="sub-badge">Everything you need</div>
+          <h2 class="section-title">Architected for <span class="gradient-text">unmatched precision</span></h2>
+          <p class="section-desc">
+            Explore cutting-edge features built to streamline workflows, eliminate manual friction, and unify all cloud events into a single reactive pipeline.
+          </p>
+
+          <!-- Interactive Category Filter -->
+          <div class="feature-tabs" id="featureTabs">
+            <button class="feature-tab active" data-category="all">All Features</button>
+            <button class="feature-tab" data-category="performance">Performance</button>
+            <button class="feature-tab" data-category="automation">Automation</button>
+            <button class="feature-tab" data-category="security">Security</button>
+          </div>
+        </div>
+
+        <div class="features-grid" id="featuresGrid">
+          <!-- Card 1 -->
+          <div class="feature-card" data-category="performance">
+            <div class="card-icon gradient-1">
+              <i class="fa-solid fa-bolt-lightning"></i>
+            </div>
+            <h3 class="card-title">Sub-Millisecond Execution</h3>
+            <p class="card-desc">
+              Global edge worker network executes tasks within 2ms of nearest ingestion point, with automated load balancing.
+            </p>
+            <ul class="feature-checklist">
+              <li><i class="fa-solid fa-circle-check"></i> Distributed edge routing</li>
+              <li><i class="fa-solid fa-circle-check"></i> Zero cold-start latency</li>
+            </ul>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="feature-card" data-category="automation">
+            <div class="card-icon gradient-2">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <h3 class="card-title">Autonomous AI Triggering</h3>
+            <p class="card-desc">
+              Context-aware triggers automatically diagnose anomalies, heal breaking schemas, and self-optimize delivery paths.
+            </p>
+            <ul class="feature-checklist">
+              <li><i class="fa-solid fa-circle-check"></i> Auto schema migration</li>
+              <li><i class="fa-solid fa-circle-check"></i> Predictive incident alerts</li>
+            </ul>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="feature-card" data-category="security">
+            <div class="card-icon gradient-3">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h3 class="card-title">Zero-Trust Vault</h3>
+            <p class="card-desc">
+              End-to-end envelope encryption, strict role-based access tokens, and automated compliance auditing out-of-the-box.
+            </p>
+            <ul class="feature-checklist">
+              <li><i class="fa-solid fa-circle-check"></i> SOC2 Type II & HIPAA certified</li>
+              <li><i class="fa-solid fa-circle-check"></i> Ephemeral credential rotation</li>
+            </ul>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="feature-card" data-category="performance">
+            <div class="card-icon gradient-4">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <h3 class="card-title">Real-Time Telemetry</h3>
+            <p class="card-desc">
+              High-cardinality monitoring with instant replay capabilities to inspect and debug raw payload histories live.
+            </p>
+            <ul class="feature-checklist">
+              <li><i class="fa-solid fa-circle-check"></i> Instant pipeline tracing</li>
+              <li><i class="fa-solid fa-circle-check"></i> Configurable log retention</li>
+            </ul>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="feature-card" data-category="automation">
+            <div class="card-icon gradient-5">
+              <i class="fa-solid fa-arrows-split-up-and-left"></i>
+            </div>
+            <h3 class="card-title">Visual Branching Logic</h3>
+            <p class="card-desc">
+              Construct complex asynchronous workflows with visual nodes, conditionals, retries, and fallback loops effortlessly.
+            </p>
+            <ul class="feature-checklist">
+              <li><i class="fa-solid fa-circle-check"></i> Drag-and-drop canvas</li>
+              <li><i class="fa-solid fa-circle-check"></i> Version controlled JSON DSL</li>
+            </ul>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="feature-card" data-category="security">
+            <div class="card-icon gradient-6">
+              <i class="fa-solid fa-fingerprint"></i>
+            </div>
+            <h3 class="card-title">Granular Audit Trails</h3>
+            <p class="card-desc">
+              Every invocation, change, and key access is cryptographically signed and queryable through our developer API.
+            </p>
+            <ul class="feature-checklist">
+              <li><i class="fa-solid fa-circle-check"></i> Tamper-proof event log</li>
+              <li><i class="fa-solid fa-circle-check"></i> SIEM webhook integration</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONNECTIONS & INTEGRATIONS SECTION -->
+    <section class="connections-section" id="connections">
+      <div class="container">
+        <div class="section-header">
+          <div class="sub-badge">Unified Ecosystem</div>
+          <h2 class="section-title">200+ Plug-and-Play <span class="gradient-text">Connections</span></h2>
+          <p class="section-desc">
+            Bridge your entire toolchain. Click on any connected service to see real-time synchronization throughput and latency.
+          </p>
+        </div>
+
+        <div class="connections-layout">
+          <!-- Orbital / Hub Visual Display -->
+          <div class="connections-hub-card">
+            <div class="hub-center">
+              <div class="hub-pulse"></div>
+              <div class="hub-logo">
+                <i class="fa-solid fa-cube"></i>
+                <span>Nexus</span>
+              </div>
+            </div>
+
+            <!-- Connected Nodes Orbiting / Grid -->
+            <div class="nodes-container" id="nodesContainer">
+              <div class="integration-node active" data-name="GitHub" data-status="Connected" data-latency="0.4ms" data-rate="14,200 req/min" data-color="#2dba4e">
+                <i class="fa-brands fa-github"></i>
+                <span class="node-label">GitHub</span>
+              </div>
+              <div class="integration-node" data-name="AWS Lambda & S3" data-status="Connected" data-latency="1.1ms" data-rate="89,400 req/min" data-color="#ff9900">
+                <i class="fa-brands fa-aws"></i>
+                <span class="node-label">AWS Cloud</span>
+              </div>
+              <div class="integration-node" data-name="Slack Alerts" data-status="Active Webhook" data-latency="0.8ms" data-rate="3,200 req/min" data-color="#4a154b">
+                <i class="fa-brands fa-slack"></i>
+                <span class="node-label">Slack</span>
+              </div>
+              <div class="integration-node" data-name="Stripe Payments" data-status="Synchronized" data-latency="0.6ms" data-rate="12,500 req/min" data-color="#635bff">
+                <i class="fa-brands fa-stripe"></i>
+                <span class="node-label">Stripe</span>
+              </div>
+              <div class="integration-node" data-name="Google Cloud" data-status="Synchronized" data-latency="0.9ms" data-rate="42,000 req/min" data-color="#4285f4">
+                <i class="fa-brands fa-google"></i>
+                <span class="node-label">Google</span>
+              </div>
+              <div class="integration-node" data-name="Figma API" data-status="Connected" data-latency="1.4ms" data-rate="5,800 req/min" data-color="#f24e1e">
+                <i class="fa-brands fa-figma"></i>
+                <span class="node-label">Figma</span>
+              </div>
+              <div class="integration-node" data-name="Docker Registry" data-status="Connected" data-latency="1.2ms" data-rate="9,100 req/min" data-color="#2496ed">
+                <i class="fa-brands fa-docker"></i>
+                <span class="node-label">Docker</span>
+              </div>
+              <div class="integration-node" data-name="Python Microservices" data-status="Active Node" data-latency="0.3ms" data-rate="72,000 req/min" data-color="#3776ab">
+                <i class="fa-brands fa-python"></i>
+                <span class="node-label">Python</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Connection Live Inspector Panel -->
+          <div class="connection-inspector" id="connectionInspector">
+            <div class="inspector-header">
+              <span class="inspector-tag"><i class="fa-solid fa-circle-dot"></i> Live Node Inspector</span>
+              <span class="status-badge" id="inspectStatus">Connected</span>
+            </div>
+            
+            <div class="inspector-body">
+              <div class="inspector-service-header">
+                <div class="service-avatar" id="inspectAvatar">
+                  <i class="fa-brands fa-github"></i>
+                </div>
+                <div>
+                  <h3 id="inspectTitle">GitHub Enterprise</h3>
+                  <p class="sub-text">Continuous bidirectional event streaming</p>
+                </div>
+              </div>
+
+              <div class="inspector-stats-grid">
+                <div class="stat-box">
+                  <span class="stat-label">Average Latency</span>
+                  <span class="stat-value" id="inspectLatency">0.4 ms</span>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-label">Throughput</span>
+                  <span class="stat-value" id="inspectRate">14,200 req/min</span>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-label">Encryption</span>
+                  <span class="stat-value">TLS 1.3 / AES-256</span>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-label">Health Score</span>
+                  <span class="stat-value green-text">100% Optimal</span>
+                </div>
+              </div>
+
+              <div class="inspector-terminal">
+                <div class="terminal-bar">
+                  <span>Stream Payload Preview</span>
+                  <button class="copy-btn" id="copyPayloadBtn"><i class="fa-regular fa-copy"></i> Copy</button>
+                </div>
+                <pre class="terminal-code"><code id="codeSnippet">{
+  "event": "nexus.node.sync",
+  "source": "github_webhook_v3",
+  "status": "delivered",
+  "duration_ms": 0.42,
+  "payload": {
+    "action": "pull_request.merged",
+    "deployment": "automated_prod"
+  }
+}</code></pre>
+              </div>
+
+              <button class="btn btn-primary btn-block" id="triggerSyncBtn">
+                <i class="fa-solid fa-arrows-rotate"></i> Test Ping Connection
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT / SHOWCASE SECTION -->
+    <section class="showcase-section" id="showcase">
+      <div class="container">
+        <div class="section-header">
+          <div class="sub-badge">Developer-First Architecture</div>
+          <h2 class="section-title">Built for Speed. <span class="gradient-text">Engineered for Reliability.</span></h2>
+          <p class="section-desc">
+            See how teams reduce infrastructure configuration from weeks into minutes.
+          </p>
+        </div>
+
+        <div class="showcase-grid">
+          <div class="showcase-card">
+            <div class="showcase-number">01</div>
+            <h3>Connect Any Endpoint</h3>
+            <p>Paste webhooks, REST APIs, or gRPC streams. NexusFlow standardizes incoming headers, payloads, and auth tokens automatically.</p>
+          </div>
+          <div class="showcase-card">
+            <div class="showcase-number">02</div>
+            <h3>Define Reactive Logic</h3>
+            <p>Chain transformations, data filtering, and condition trees with zero DevOps overhead or complex server orchestration.</p>
+          </div>
+          <div class="showcase-card">
+            <div class="showcase-number">03</div>
+            <h3>Scale Without Limits</h3>
+            <p>Handles bursts up to millions of events per second with instant global multi-region replication and fallback buffering.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / CONTENT FORM SECTION -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <div class="sub-badge">Get in Touch</div>
+            <h2 class="contact-heading">Ready to connect your stack? Let's talk.</h2>
+            <p class="contact-subtext">
+              Have questions about integrations, security reviews, or enterprise SLA plans? Our solutions engineers are here 24/7.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <h4>Email our Team</h4>
+                  <p>hello@nexusflow.cloud</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-comments"></i></div>
+                <div>
+                  <h4>Community & Discord</h4>
+                  <p>discord.gg/nexusflow</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-shield"></i></div>
+                <div>
+                  <h4>Enterprise SLA</h4>
+                  <p>Guaranteed 99.999% contract uptime</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-card">
+            <form id="contactForm" novalidate>
+              <h3 class="form-title">Send a message</h3>
+              
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" placeholder="Alex Morgan" required />
+                <span class="error-msg" id="nameError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Work Email *</label>
+                <input type="email" id="email" name="email" placeholder="alex@company.com" required />
+                <span class="error-msg" id="emailError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="interest">Interested In</label>
+                <select id="interest" name="interest">
+                  <option value="features">Features & Capability Inquiries</option>
+                  <option value="connections">Custom Connections / Integrations</option>
+                  <option value="enterprise">Enterprise Scalability & Security</option>
+                  <option value="demo">Schedule a 1-on-1 Demo</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Project Details *</label>
+                <textarea id="message" name="message" rows="4" placeholder="Tell us about your stack and requirements..." required></textarea>
+                <span class="error-msg" id="messageError"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block submit-btn" id="submitBtn">
+                <span>Send Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#hero" class="brand-logo">
+          <span class="logo-icon"><i class="fa-solid fa-cube"></i></span>
+          <span class="logo-text">Nexus<span>Flow</span></span>
+        </a>
+        <p class="footer-description">
+          The next-generation distributed orchestrator for microservices, integrations, and intelligent real-time data synchronization.
+        </p>
+        <div class="social-links">
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links-group">
+        <h4>Product</h4>
+        <a href="#features">Features</a>
+        <a href="#connections">Connections</a>
+        <a href="#showcase">Architecture</a>
+        <a href="#">Roadmap</a>
+        <a href="#">Security</a>
+      </div>
+
+      <div class="footer-links-group">
+        <h4>Integrations</h4>
+        <a href="#connections">GitHub Sync</a>
+        <a href="#connections">AWS Serverless</a>
+        <a href="#connections">Slack Triggers</a>
+        <a href="#connections">Custom Webhooks</a>
+        <a href="#">API Documentation</a>
+      </div>
+
+      <div class="footer-links-group">
+        <h4>Company</h4>
+        <a href="#">About Us</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+        <a href="#contact">Contact Support</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 NexusFlow Technologies Inc. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Terms of Service</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Security Notice</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+    <div class="toast-icon"><i class="fa-solid fa-circle-check"></i></div>
+    <div class="toast-message" id="toastMessage">Success! Your request has been sent.</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
